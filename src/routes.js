@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
-import loadable from '@loadable/component'
-import Loading from './components/Loading';
-
 import Landing from './screens/Landing'
 import Intro1 from './screens/Intro1'
 import Intro2 from './screens/Intro2'
@@ -12,7 +8,11 @@ import Progress from './screens/Progress'
 import Home from './screens/Home'
 import NotFound from './screens/NotFound'
 
-/* Authentication pages begins here
+/* 
+import loadable from '@loadable/component'
+import Loading from './components/Loading';
+
+Authentication pages begins here
 const Landing = loadable(() => import('./screens/Landing'), {
     fallback: Loading,
 })
