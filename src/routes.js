@@ -6,6 +6,9 @@ import Intro1 from './screens/Intro1'
 import Intro2 from './screens/Intro2'
 import Progress from './screens/Progress'
 import Home from './screens/Home'
+import Home1 from './screens/Home1'
+import Home2 from './screens/Home2'
+import Home3 from './screens/Home3'
 import NotFound from './screens/NotFound'
 
 /* 
@@ -61,6 +64,18 @@ export default class Routes extends Component {
                         exact 
                         path="/home" 
                         component={Home}/>
+                    <Route 
+                        exact 
+                        path="/home1" 
+                        component={Home1}/>
+                    <Route 
+                        exact 
+                        path="/home2" 
+                        component={Home2}/>
+                    <Route 
+                        exact 
+                        path="/home3" 
+                        component={Home3}/>
                     <Route component={NotFound}/>
                 </Switch>
             </Router>
